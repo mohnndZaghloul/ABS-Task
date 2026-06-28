@@ -5,7 +5,7 @@ const CardJob = ({ job }: { job: Job_TP }) => {
   return (
     <Link
       href={job.slug}
-      className="rounded-xl border flex justify-between items-center p-5 bg-zinc-900 hover:bg-zinc-800 hover:-translate-1 hover:border-emerald-500 transition duration-200">
+      className="rounded-xl border flex justify-between items-center p-3 md:p-5 bg-zinc-900 hover:bg-zinc-800 hover:-translate-1 hover:border-emerald-500 transition duration-200">
       <div>
         <h3 className="md:text-2xl font-semibold max-w-full line-clamp-1">
           {job.title}
@@ -14,7 +14,7 @@ const CardJob = ({ job }: { job: Job_TP }) => {
           {job.company}
         </span>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2 md:gap-4">
         <div>
           <p className="bg-emerald-600/40 text-nowrap border text-[0.75rem] md:text-sm border-emerald-300 px-4 py-1 rounded-full">
             {job.employmentType}
