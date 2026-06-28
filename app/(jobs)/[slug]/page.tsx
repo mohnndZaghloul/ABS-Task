@@ -69,15 +69,15 @@ export default async function JobDetailsPage({ params }: Props_TP) {
                 )}
               </div>
               <div>
-                <h3 className="text-xl md:text-4xl">{jobDetails?.title}</h3>
-                <p className="text-emerald-500 text-sm">
+                <h3 className="text-lg md:text-4xl">{jobDetails?.title}</h3>
+                <p className="text-emerald-500 text-xs md:text-sm">
                   {" "}
                   {jobDetails?.company}
                 </p>
               </div>
             </div>
             <div>
-              <p className="text-zinc-500 uppercase text-xs text-end">
+              <p className="text-zinc-500 uppercase text-[0.75rem] md:text-xs text-nowrap text-end">
                 monthly salary
               </p>
               <p className="font-semibold md:text-2xl">
@@ -86,13 +86,13 @@ export default async function JobDetailsPage({ params }: Props_TP) {
             </div>
           </div>
           <div className="flex gap-2 md:gap-5 mt-3 md:mt-5">
-            <span className="px-5 py-1 text-sm bg-emerald-500/20 border-emerald-500 border rounded-2xl">
+            <span className="px-5 py-1 text-nowrap text-[0.75rem] md:text-sm bg-emerald-500/20 border-emerald-500 border rounded-2xl">
               {jobDetails?.employmentType}
             </span>
-            <span className="px-5 py-1 text-sm bg-zinc-950/20 border-zinc-950 border rounded-2xl">
+            <span className="px-5 py-1 text-nowrap text-[0.75rem] md:text-sm bg-zinc-950/20 border-zinc-950 border rounded-2xl">
               {jobDetails?.location}
             </span>
-            <span className="px-5 py-1 text-sm bg-zinc-950/20 border-zinc-950 border rounded-2xl">
+            <span className="px-5 py-1 text-nowrap text-[0.75rem] md:text-sm bg-zinc-950/20 border-zinc-950 border rounded-2xl">
               {jobDetails?.experience}
             </span>
           </div>
